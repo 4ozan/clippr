@@ -1,90 +1,69 @@
-# 🎬 Video Clipper
-
-A modern video clipper web app built with **Bun**, **Hono**, and **Astro**.
+🎬 Video Clipper
+A modern video clipper web app built with Bun, Hono, and Astro.
 Upload a video and instantly download the first 10 seconds—fast, simple, and beautiful.
 
----
+✨ Features
+⚡ Ultra-fast backend with Bun + Hono
 
-## ✨ Features
+🌌 Modern frontend with Astro
 
-- ⚡ **Ultra-fast backend** with Bun + Hono
-- 🌌 **Modern frontend** with Astro
-- 🎥 **Clip any video**: Upload and get the first 10 seconds as a new file
-- 🎨 **Beautiful UI** (see below!)
+🎥 Clip any video: Upload and get the first 10 seconds as a new file
 
----
+🎨 Enhanced UI delight (see below!)
 
-## 🖼️ Preview
+🖼️ Preview
+Screenshots of your UI can go here!
+For a truly delightful UI, consider using the official Astro logo from its CDN and replacing the generic background with something more modern and engaging (e.g., a subtle gradient, an abstract pattern, or a blurred video still).
+(If you want to add actual screenshots, save them in public/ or assets/ and reference them here.)
 
-![Astro Logo](client/src/assets/astro.svg)
-![Background](client/src/assets/background.svg)
-
-> _Screenshots of your UI can go here!_
-> (If you want to add actual screenshots, save them in `public/` or `assets/` and reference them here.)
-
----
-
-## 🛠️ Project Structure
-
-```
+🛠️ Project Structure
 /
-├── client/         # Astro frontend
-│   ├── src/
-│   │   ├── components/Clip.astro
-│   │   ├── assets/astro.svg
-│   │   └── assets/background.svg
-│   └── public/
-├── server/         # Bun + Hono backend
-│   ├── index.ts
-│   └── ...
-```
+├── client/         # Astro frontend
+│   ├── src/
+│   │   ├── components/Clip.astro
+│   │   ├── assets/astro.svg     # (Consider removing if using CDN)
+│   │   └── assets/background.svg # (Consider removing if using CDN)
+│   └── public/
+├── server/         # Bun + Hono backend
+│   ├── index.ts
+│   └── ...
 
----
-
-## 🚀 Getting Started
-
-### 1. **Backend (Bun + Hono)**
-
-```bash
+🚀 Getting Started
+1. Backend (Bun + Hono)
 cd server
 bun install
 bun run index.ts
-```
-- The server will run on [http://localhost:3001](http://localhost:3001)
 
-### 2. **Frontend (Astro)**
+The server will run on http://localhost:3001
 
-```bash
+2. Frontend (Astro)
 cd client
 npm install
 npm run dev
-```
-- The frontend will run on [http://localhost:4321](http://localhost:4321)
 
----
+The frontend will run on http://localhost:4321
 
-## 📦 Usage
+📦 Usage
+Open http://localhost:4321 in your browser.
 
-1. Open [http://localhost:4321](http://localhost:4321) in your browser.
-2. Upload a video file.
-3. Click **Clip Video**.
-4. Download your 10-second clip!
+Upload a video file.
 
----
+Click Clip Video.
 
-## 🖼️ Assets
+Download your 10-second clip!
 
-- ![Astro Logo](client/src/assets/astro.svg)
-- ![Background](client/src/assets/background.svg)
-- Favicon: `client/public/favicon.svg`
+🖼️ Assets
+Astro Logo: https://docs.astro.build/assets/full-logo.svg (Official CDN)
 
----
+Background: For improved UI delight, consider a modern and visually appealing background. You might use a subtle gradient, an abstract design, or a high-quality, publicly available image that complements your app's aesthetic.
 
-## 🧑‍💻 Tech Stack
+Favicon: client/public/favicon.svg
 
-- [Bun](https://bun.sh) – Backend runtime
-- [Hono](https://hono.dev) – Backend framework
-- [Astro](https://astro.build) – Frontend framework
-- [ffmpeg-static](https://www.npmjs.com/package/ffmpeg-static) – Video processing
+🧑‍💻 Tech Stack
+Bun – Backend runtime
 
+Hono – Backend framework
 
+Astro – Frontend framework
+
+ffmpeg-static – Video processing
