@@ -1,18 +1,15 @@
 import * as mongoose from "mongoose"
 
-const animalSchema = new mongoose.Schema(
+const userSchema = new mongoose.Schema(
     {
         name:{type:String ,required:true},
-        sound:{type: String, required :true}
-    },
-    {
-    methods:{
-        speak() {
-         console.log(`${this.sound}`)
-        },
-    },
-},
+        email:{type: String, required:true, unique:true},
+        password:{type: String, required:true},
+        createdAt:{ type:Date, default:Date.now()}
+}
+    
+
 )
 
-export type Animal = mongoose.InferSchemaType< typeof animalSchema>;
-export const Animal = mongoose.model("Animal", animalSchema)
+export type User = mongoose.InferSchemaType< typeof userSchema>;
+export const User = mongoose.model("User", userSchema)
